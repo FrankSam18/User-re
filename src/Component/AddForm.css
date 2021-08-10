@@ -1,0 +1,42 @@
+.userForm {
+    text-align: center;
+    background-color: rgb(53, 104, 104);
+    color: black;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    margin: auto;
+    font-weight: bolder;
+    box-shadow: rgba(179, 132, 132, 0.4) 0px 30px 90px;
+   }
+   
+   .formInput {
+     margin: 1rem;
+     height: 2rem;
+     width: auto;
+     border-radius: 5px;
+   }
+   
+   .formInput:hover {
+     margin-right: 10px;
+     background-color: rgb(194, 111, 11);
+     transition: margin-right all;
+   }
+   
+   .submit {
+    font-weight: bolder;
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+   }
+   
+   .submit:hover {
+     background-color: black;
+     color: aliceblue;
+     margin-right: 10px;
+     transition: margin-right all;
+   }
+   
+   .form-check {
+     font-weight: bolder;
+   }
