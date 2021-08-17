@@ -3,21 +3,10 @@ import React, { Component } from "react";
 import AddForm from "./Component/AddForm";
 import UserList from "./Component/UserList";
 import './App.css';
-import { getDefaultNormalizer } from "@testing-library/react";
+// import { getDefaultNormalizer } from "@testing-library/react";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      users: [
-        {
-        name: 'Frank',
-        email: 'frank@gmail.com',
-        age: '20'
-      }
-      ],
-    };
-  }
+
 
   handleAddUser = (newUser) => {
     newUser.id = Math.random().toString();
@@ -46,13 +35,11 @@ class App extends Component {
       <div className="container user">
         <div className="row">
           <div className="col-4">
-            <AddForm addUser={this.handleAddUser} />
+            <AddForm />
           </div>
           <div className="col-8">
             <UserList className="user-lists"
-              users={this.state.users}
-              deleteUser={this.handleDeleteUser}
-              editUser={this.handleEditUser}
+             
             />
           </div>
         </div>

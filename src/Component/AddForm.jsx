@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {connect} from 'react-redux';
+import { addUser } from "../actions/userActions";
 import './AddForm.css'
 
 class AddForm extends Component {
@@ -21,7 +23,7 @@ class AddForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.props.addUser(this.state);
+    this.props.AddNewUser(this.state);
     this.setState({
       name: "",
       email: "",
@@ -69,4 +71,10 @@ class AddForm extends Component {
   }
 }
 
-export default AddForm;
+const mapDispatchToProps ={
+  AddNewUser:addUser
+}
+
+export default  connect (null,mapDispatchToProps) (AddForm);
+
+
