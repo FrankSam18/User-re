@@ -6,4 +6,19 @@ export const addUser = (user) => {
         type: "ADD_USER",
         payload: user
     }
+
+
+}
+export const deleteUser = (user_id) => {
+    return {
+        type: "DELETE_USER",
+        payload: user_id
+    }
+}
+
+export const editUser = (updatedUser) => {
+    return {
+        type: "EDIT_USER",
+        payload: updatedUser
+    }
 }
